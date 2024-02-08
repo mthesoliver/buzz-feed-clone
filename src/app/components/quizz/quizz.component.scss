@@ -1,0 +1,85 @@
+.quizz-container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .quizz-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block: 1rem;
+
+        h3 {
+            margin-block: 2rem 1rem;
+        }
+    }
+
+    .quizz-questions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block: 1rem;
+        border: 1px solid #4224d9;
+        border-radius: 8px;
+        background-color: #644ed2;
+        width: 100%;
+        height: 200px;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .quizz-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        gap: 1rem;
+
+        .btn-option {
+            background-color: transparent;
+            color: #fff;
+            border-radius: 8px;
+            border: 1px solid #18ab29;
+            display: inline-block;
+            cursor: pointer;
+            padding: 2rem 4rem;
+            font-size: 18px;
+            text-decoration: none;
+            text-shadow: 0 1px 0 #2f6627;
+            transition: .3s ease;
+            width: 45%;
+        }
+
+        .btn-option:hover {
+            background-color: #5cbf2a;
+            transition: .3s ease;
+        }
+
+        .btn-option:active {
+            position: relative;
+            top: 1px;
+            border: none;
+            box-shadow:inset 0 0 0 4px #2f6627;
+            transition: .1s ease;
+        }
+    }
+
+    .quizz-results{
+        width: 100%;
+        height: 350px;
+        background: #210239;
+        border-radius: 8px;
+        margin: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
